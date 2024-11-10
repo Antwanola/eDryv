@@ -1,0 +1,8 @@
+/* src/fonts.css */
+@font-face {
+  font-family: "Bozon";
+  src: url("/fonts/Bozon_bold.otf") format("opentype");
+  src: url("/fonts/Bozon_regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

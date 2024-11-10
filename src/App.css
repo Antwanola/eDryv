@@ -1,0 +1,35 @@
+/* index.css */
+body {
+  font-family: 'Bozon';
+}
+/* global.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Bozon';
+}
+
+/* globals.css */
+body {
+  background: linear-gradient(
+      180deg,
+      #fefffc 0%,
+      rgba(255, 255, 255, 1) 46.1%,
+      rgba(86, 240, 159, 1) 100%
+  );
+}
+
+
+/* Ensure media and images scale responsively */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Chakra's CSS reset should help too, but add any overrides as necessary */
