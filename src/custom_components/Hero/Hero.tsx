@@ -23,9 +23,6 @@ const Hero = () => {
       rgba(86, 240, 159, 1) 100%
   );"
   borderRadius={80}
-  sx={{
-    clipPath: "path('M0,100 C150,200 300,0 500,100 L500,00 L0,0 Z')",
-  }}
   maxH={'auto'}
     >
     <Box mt={10} px={4}
@@ -38,7 +35,7 @@ const Hero = () => {
         w="100%"
       >
         {/* Text Section */}
-        <VStack w={containerWidth} alignItems={{ base: "start", md: "flex-start" }} spacing={spacing} gap={spacing}>
+        <VStack w={containerWidth} alignItems={{ base: "start", md: "flex-start" }}  gap={spacing}>
           <Box>
             <Text
               wordBreak="break-word"

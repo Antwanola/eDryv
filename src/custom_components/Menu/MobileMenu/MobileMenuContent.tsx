@@ -23,7 +23,7 @@ const MobileMenu = () => {
     <DrawerRoot open={open} onOpenChange={(e) => setOpen(e.open)} placement={'top'} >
       <DrawerBackdrop  />
       <DrawerTrigger asChild>
-        <Button variant="none" size="xs">
+        <Button variant="ghost" size="xs">
           <RxHamburgerMenu/>
         </Button>
       </DrawerTrigger>

@@ -1,5 +1,4 @@
 import { Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
 import PageWrapper from '../PageWraper'
 import LogoCarousel from './LogoCarousel'
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import PageWrapper from "../PageWraper";
 import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { motion, Variants } from "framer-motion";

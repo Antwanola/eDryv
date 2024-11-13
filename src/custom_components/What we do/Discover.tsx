@@ -1,4 +1,3 @@
-import React from "react";
 import PageWrapper from "../PageWraper";
 import { Box, Spacer, Span, Text } from "@chakra-ui/react";
 

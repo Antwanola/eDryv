@@ -5,7 +5,6 @@ import {
   ColorModeProvider,
   type ColorModeProviderProps,
 } from "./color-mode"
-import theme from "../../theme"
 
 export function Provider(props: ColorModeProviderProps) {
   return (
