@@ -1,7 +1,7 @@
 import React from "react";
 import PageWrapper from "../PageWraper";
 import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import phone from "../../assets/phone2.avif";
 
 // Create a motion component for the Image
@@ -11,7 +11,7 @@ const Product_Cta = () => {
   const imageWidth = useBreakpointValue({ base: 250, md: 350 });
 
   // Define the floating animation variants
-  const floatVariants = {
+  const floatVariants: Variants = {
     float: {
       y: [0, -15, 0], // Move up by 15px and then back to original
       transition: {

@@ -3,15 +3,12 @@ import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
 
 import Logo from "../../assets/Logo.png";
 import Menu from "../Menu/Menu";
-import { RxHamburgerMenu } from "react-icons/rx";
 import MobileMenu from "../Menu/MobileMenu/MobileMenuContent";
 import { MdOutlineSupportAgent } from "react-icons/md";
 
-interface HeaderProp {
-  menu: string;
-}
+
 // Create the PaddingWrapper component
-const Header: React.FC<HeaderProp> = () => {
+const Header = () => {
   return (
     <PageWrapper>
       <PageWrapper>
