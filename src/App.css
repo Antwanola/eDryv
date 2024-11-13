@@ -16,14 +16,14 @@ html, body, #root {
 }
 
 /* globals.css */
-body {
+/* body {
   background: linear-gradient(
       180deg,
       #fefffc 0%,
       rgba(255, 255, 255, 1) 46.1%,
       rgba(86, 240, 159, 1) 100%
   );
-}
+} */
 
 
 /* Ensure media and images scale responsively */
@@ -33,3 +33,13 @@ img, video {
 }
 
 /* Chakra's CSS reset should help too, but add any overrides as necessary */
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -3,18 +3,34 @@ import { FaApple } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 import moc from "../../assets/moc.png";
 import AvatarComp from "../AvatarGroup";
+import PageWrapper from "../PageWraper";
 
 const Hero = () => {
   // Responsive styles using Chakra's useBreakpointValue
   const flexDirection = useBreakpointValue({ base: "column", md: "row" });
   const textAlign = useBreakpointValue({ base: "start", md: "left" });
   const containerWidth = useBreakpointValue({ base: "100%", md: "50%" });
-  const imageWidth = useBreakpointValue({ base: 250, md: 250 });
+  const imageWidth = useBreakpointValue({ base: 250, md: 350 });
   const spacing = useBreakpointValue({ base: 5, md: 8 });
   const marginLeft = useBreakpointValue({ base: 0, md: 40 });
   
   return (
-    <Box mt={10} px={4}>
+    <PageWrapper
+    bgGradient=" linear-gradient(
+      180deg,
+      #fefffc 0%,
+      rgba(255, 255, 255, 1) 46.1%,
+      rgba(86, 240, 159, 1) 100%
+  );"
+  borderRadius={80}
+  sx={{
+    clipPath: "path('M0,100 C150,200 300,0 500,100 L500,00 L0,0 Z')",
+  }}
+  maxH={'auto'}
+    >
+    <Box mt={10} px={4}
+
+  >
       <Flex
         flexDirection={flexDirection}
         alignItems="center"
@@ -81,6 +97,7 @@ const Hero = () => {
         </VStack>
       </Flex>
     </Box>
+    </PageWrapper>
   );
 };
 

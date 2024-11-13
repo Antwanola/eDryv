@@ -13,7 +13,7 @@ interface HeaderProp {
 // Create the PaddingWrapper component
 const Header: React.FC<HeaderProp> = () => {
   return (
-    <>
+    <PageWrapper>
       <PageWrapper>
         <Container>
           <Flex align={"center"} justifyContent={"space-between"}>
@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProp> = () => {
           </Flex>
         </Container>
       </PageWrapper>
-    </>
+    </PageWrapper>
   );
 };
 

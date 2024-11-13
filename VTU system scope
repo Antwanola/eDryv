@@ -1,0 +1,44 @@
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Box } from "@chakra-ui/react";
+
+const CardScrollAnimation = () => {
+  const { scrollYProgress } = useScroll();
+  
+  const yPosition = useTransform(scrollYProgress, [0, 0.5, 1], [0, -100, -300]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0.6]);
+
+  return (
+    <Box h="200vh">
+      <motion.div
+        style={{
+          position: "sticky",
+          top: "20vh",
+          transformOrigin: "center",
+          y: yPosition,
+          scale: scale,
+          opacity: opacity,
+          zIndex: 1,
+        }}
+      >
+        <Box bg="teal.500" h="300px" w="300px" borderRadius="20px" />
+      </motion.div>
+      <motion.div
+        style={{
+          position: "sticky",
+          top: "20vh",
+          transformOrigin: "center",
+          y: useTransform(scrollYProgress, [0, 0.5, 1], [300, 200, 100]),
+          scale: useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]),
+          opacity: useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]),
+          zIndex: 0,
+        }}
+      >
+        <Box bg="orange.500" h="300px" w="300px" borderRadius="20px" />
+      </motion.div>
+    </Box>
+  );
+};
+
+export default CardScrollAnimation;
