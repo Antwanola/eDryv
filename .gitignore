@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+VTU system scope
 
 # Editor directories and files
 .vscode/*

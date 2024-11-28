@@ -2,13 +2,20 @@
 import PageWrapper from "../PageWraper";
 import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 import { motion, Variants } from "framer-motion";
-import phone from "../../assets/phone2.avif";
+
 
 // Create a motion component for the Image
 const MotionImage = motion(Image);
 
-const Product_Cta = () => {
-  const imageWidth = useBreakpointValue({ base: 250, md: 350 });
+interface Product_CtaTypes {
+  colour: string;
+  title: string;
+  text: string;
+  image: string;
+}
+
+const Product_Cta: React.FC<Product_CtaTypes> = ({ colour, title, text, image}) => {
+  const imageWidth = useBreakpointValue({ base: 150, md: 250 });
 
   // Define the floating animation variants
   const floatVariants: Variants = {
@@ -25,13 +32,14 @@ const Product_Cta = () => {
 
   return (
     <PageWrapper>
-      <Box px={{ base: 5, md: 10 }}>
+      <Box px={{ base: 5, md: 10 }} py={{base: 5, md: 20}}>
         <Flex
-          bg={"rgb(251, 248, 233)"}
+          bg={colour}
           h={"auto"}
-          px={{ base: 5, md: 10 }}
+          px={{ base: 5, md: 20 }}
           pt={{ base: 20, md: 35 }}
-          pb={60}
+          pb={{ base: 0, md: 40}}
+          direction={{base: "column", md: "row"}}
           borderRadius={30}
           justifyContent={"space-between"}
           alignItems={"center"}
@@ -40,12 +48,10 @@ const Product_Cta = () => {
         >
           <Box w={{ base: "100%", md: "50%" }} spaceY={10} color={"rgb(0, 71, 55)"}>
             <Text fontSize={{ base: 30, md: 40 }} fontWeight={900} textWrap={"balance"}>
-              Manage All Your Credit Cards in One Place.
+              {title}
             </Text>
             <Text fontSize={{ base: 16, md: 20 }}>
-              Keep track of multiple credit cards effortlessly within the GreenBank app.
-              Monitor balances, track transactions, and stay on top of payments without
-              switching between different accounts.
+             {text}
             </Text>
           </Box>
 
@@ -59,9 +65,9 @@ const Product_Cta = () => {
           >
             <MotionImage
               w={imageWidth}
-              src={phone}
-              position="absolute"
-              bottom={{ base: "-10px", md: "-300px" }}
+              src={image}
+              position={{base: "relative", md: "absolute"}}
+              bottom={{ base: "-10px", md: "-200px" }}
               transform={{ base: "translateY(.1%)", md: "translateY(5%)" }}
               variants={floatVariants}
               animate="float"
