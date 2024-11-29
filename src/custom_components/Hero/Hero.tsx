@@ -88,7 +88,7 @@ const Hero = () => {
           {/* Avatar Section */}
           <Flex gap={3} alignItems="center" justifyContent={{ base: "center", md: "flex-start" }}>
             <AvatarComp />
-            <Text>Over 10k users</Text>
+            <Text>1k+ Downloads</Text>
           </Flex>
         </VStack>
 
