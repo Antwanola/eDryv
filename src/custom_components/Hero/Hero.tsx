@@ -45,7 +45,7 @@ const Hero = () => {
               lineHeight={1.6}
               textAlign={textAlign}
             >
-              Move Smarter, Go Your <Text as="span" color="green.300">Electric</Text>.
+              Move Smarter, Go <Text as="span" color="green.300">Electric</Text>.
             </Text>
           </Box>
 
