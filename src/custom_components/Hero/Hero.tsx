@@ -10,7 +10,13 @@ const Hero = () => {
   const flexDirection = useBreakpointValue({ base: "column", md: "row" });
   const textAlign = useBreakpointValue({ base: "start", md: "left" });
   const containerWidth = useBreakpointValue({ base: "100%", md: "50%" });
-  const imageWidth = useBreakpointValue({ base: 250, md: 350 });
+  const imageWidth = useBreakpointValue({ 
+  base: 300,    // Small mobile devices
+  sm: 350,      // Slightly larger mobile
+  md: 500,      // Tablet and up
+  lg: 600,      // Larger screens
+  xl: 700       // Extra large screens
+  });
   const spacing = useBreakpointValue({ base: 5, md: 8 });
   const marginLeft = useBreakpointValue({ base: 0, md: 40 });
   
@@ -40,7 +46,7 @@ const Hero = () => {
             <Text
               wordBreak="break-word"
               fontSize={{ base: 30, md: 50 }}
-              fontWeight={700}
+              fontWeight={1000}
               color="#004737"
               lineHeight={1.6}
               textAlign={textAlign}
@@ -51,7 +57,9 @@ const Hero = () => {
 
           <Box>
             <Text fontWeight={100} fontSize={{ base: 16, md: 20 }} textAlign={textAlign}>
-              Join thousands of riders switching to cleaner, greener trips with eDryv. Download the app now and experience rides in our all new electric vehicles.
+              Join thousands of riders switching to cleaner, greener trips with 
+              <Text as="span" fontWeight="bold" color="green.300">eDryv</Text>. 
+              Download the app now and experience rides in our all new electric vehicles.
             </Text>
           </Box>
 
@@ -80,7 +88,7 @@ const Hero = () => {
           {/* Avatar Section */}
           <Flex gap={3} alignItems="center" justifyContent={{ base: "center", md: "flex-start" }}>
             <AvatarComp />
-            <Text>Over 10k users</Text>
+            <Text>1k+ Downloads</Text>
           </Flex>
         </VStack>
 
