@@ -10,7 +10,13 @@ const Hero = () => {
   const flexDirection = useBreakpointValue({ base: "column", md: "row" });
   const textAlign = useBreakpointValue({ base: "start", md: "left" });
   const containerWidth = useBreakpointValue({ base: "100%", md: "50%" });
-  const imageWidth = useBreakpointValue({ base: 250, md: 350 });
+  const imageWidth = useBreakpointValue({ 
+  base: 300,    // Small mobile devices
+  sm: 350,      // Slightly larger mobile
+  md: 500,      // Tablet and up
+  lg: 600,      // Larger screens
+  xl: 700       // Extra large screens
+  });
   const spacing = useBreakpointValue({ base: 5, md: 8 });
   const marginLeft = useBreakpointValue({ base: 0, md: 40 });
   
@@ -40,7 +46,7 @@ const Hero = () => {
             <Text
               wordBreak="break-word"
               fontSize={{ base: 30, md: 50 }}
-              fontWeight={1200}
+              fontWeight={1400}
               color="#004737"
               lineHeight={1.6}
               textAlign={textAlign}
