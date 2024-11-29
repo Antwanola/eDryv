@@ -1,7 +1,7 @@
 import Product_Cta from "./Product_Cta";
 import services from "../../assets/Folti_Mockups/all_services.png";
 import billings from "../../assets/Folti_Mockups/billings.png";
-import vehicle from "../../assets/Folti_Mockups/vehicle.png";
+import vehicle from "../../assets/Folti_Mockups/car-removebg.png";
 import trip_Monitoring from "../../assets/Folti_Mockups/trip_Monitoring.png";
 
 interface ProductPropFace {
