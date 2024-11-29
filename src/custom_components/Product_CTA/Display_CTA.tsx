@@ -46,6 +46,7 @@ export default function Display_CTA() {
           text={item.text}
           image={item.image}
           colour={item.colour}
+          size={item.image === vehicle ? '300px' : '200px'}  {/* Adjusting size for the vehicle image */}
         />
       ))}
     </>
