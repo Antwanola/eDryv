@@ -1,7 +1,7 @@
 import { Box, Flex, IconButton, Image, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
 import { FaApple } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
-import moc from "../../assets/moc.png";
+import main from "../../assets/Folti_Mockups/Main.png";
 import AvatarComp from "../AvatarGroup";
 import PageWrapper from "../PageWraper";
 
@@ -87,7 +87,7 @@ const Hero = () => {
         {/* Image Section */}
         <VStack ml={marginLeft} mt={{ base: 5, md: 0 }}>
           <Image
-            src={moc}
+            src={main}
             alt="Mockup Image"
             w={imageWidth}
           />
