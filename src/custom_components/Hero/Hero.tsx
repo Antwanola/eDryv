@@ -40,7 +40,7 @@ const Hero = () => {
             <Text
               wordBreak="break-word"
               fontSize={{ base: 30, md: 50 }}
-              fontWeight={700}
+              fontWeight={1000}
               color="#004737"
               lineHeight={1.6}
               textAlign={textAlign}
@@ -51,7 +51,8 @@ const Hero = () => {
 
           <Box>
             <Text fontWeight={100} fontSize={{ base: 16, md: 20 }} textAlign={textAlign}>
-              Join thousands of riders switching to cleaner, greener trips with eDryv.
+              Join thousands of riders switching to cleaner, greener trips with
+              <Text as="span" fontWeight="bold" color="green.300"> eDryv</Text>.
               Download the app now and experience rides in our all new electric vehicles.
             </Text>
           </Box>
