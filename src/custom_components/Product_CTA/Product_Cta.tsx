@@ -32,12 +32,12 @@ const Product_Cta: React.FC<Product_CtaTypes> = ({ colour, title, text, image}) 
 
   return (
     <PageWrapper>
-      <Box px={{ base: 5, md: 10 }} py={{base: 5, md: 20}}>
+      <Box px={{ base: 1, md: 10 }} py={{base: 2, md: 20}}>
         <Flex
           bg={colour}
           h={"auto"}
           px={{ base: 5, md: 20 }}
-          pt={{ base: 20, md: 35 }}
+          pt={{ base: 10, md: 35 }}
           pb={{ base: 0, md: 40}}
           direction={{base: "column", md: "row"}}
           borderRadius={30}
@@ -45,6 +45,7 @@ const Product_Cta: React.FC<Product_CtaTypes> = ({ colour, title, text, image}) 
           alignItems={"center"}
           position="relative"
           overflow="visible"
+          spaceY={10}
         >
           <Box w={{ base: "100%", md: "50%" }} spaceY={10} color={"rgb(0, 71, 55)"}>
             <Text fontSize={{ base: 30, md: 40 }} fontWeight={900} textWrap={"balance"}>
