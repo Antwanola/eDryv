@@ -10,13 +10,7 @@ const Hero = () => {
   const flexDirection = useBreakpointValue({ base: "column", md: "row" });
   const textAlign = useBreakpointValue({ base: "start", md: "left" });
   const containerWidth = useBreakpointValue({ base: "100%", md: "50%" });
-  const imageWidth = useBreakpointValue({ 
-  base: 300,    // Small mobile devices
-  sm: 350,      // Slightly larger mobile
-  md: 500,      // Tablet and up
-  lg: 600,      // Larger screens
-  xl: 700       // Extra large screens
-  });
+  const imageWidth = useBreakpointValue({ base: 250, md: 350 });
   const spacing = useBreakpointValue({ base: 5, md: 8 });
   const marginLeft = useBreakpointValue({ base: 0, md: 40 });
   
