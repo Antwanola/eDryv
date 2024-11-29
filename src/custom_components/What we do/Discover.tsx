@@ -23,8 +23,7 @@ const Discover = () => {
             textAlign={"center"}
             fontSize={{ base: 16, md: 18, lg: 20 }}
           >
-            Elevate your e-commerce experience with our powerful feature set
-            designed for unparalleled excellence.
+            Your Comfort and Safety Are Always Our Priority.
           </Text>
         </Box>
       </Box>
