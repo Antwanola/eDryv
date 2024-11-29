@@ -1,7 +1,7 @@
 import { Box, Flex, IconButton, Image, Text, VStack, useBreakpointValue } from "@chakra-ui/react";
 import { FaApple } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
-import moc from "../../assets/moc.png";
+import main from "../../assets/Folti_Mockups/Main.png";
 import AvatarComp from "../AvatarGroup";
 import PageWrapper from "../PageWraper";
 
@@ -45,13 +45,13 @@ const Hero = () => {
               lineHeight={1.6}
               textAlign={textAlign}
             >
-              Empower Your <Text as="span" color="green.300">Finances</Text> For A Brighter Future.
+              Move Smarter, Go Your <Text as="span" color="green.300">Electric</Text>.
             </Text>
           </Box>
 
           <Box>
             <Text fontWeight={100} fontSize={{ base: 16, md: 20 }} textAlign={textAlign}>
-              Streamline your payments with GreenBank. Instant bank transfers, hassle-free bill payments, and more – all at your fingertips.
+              Join thousands of riders switching to cleaner, greener trips with eDryv. Download the app now and experience rides in our all new electric vehicles.
             </Text>
           </Box>
 
@@ -80,14 +80,14 @@ const Hero = () => {
           {/* Avatar Section */}
           <Flex gap={3} alignItems="center" justifyContent={{ base: "center", md: "flex-start" }}>
             <AvatarComp />
-            <Text>Over 200k users</Text>
+            <Text>Over 10k users</Text>
           </Flex>
         </VStack>
 
         {/* Image Section */}
         <VStack ml={marginLeft} mt={{ base: 5, md: 0 }}>
           <Image
-            src={moc}
+            src={main}
             alt="Mockup Image"
             w={imageWidth}
           />
