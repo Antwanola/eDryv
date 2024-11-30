@@ -22,11 +22,10 @@ const StepBackdrop = () => {
         {/* Left Content */}
         <Box flex="1" textAlign={{ base: "center", md: "left" }} >
           <Heading fontSize={{ base: "2xl", md: "4xl" }} mb="4">
-            Your Section Title
+            New Section
           </Heading>
           <Text fontSize={{ base: "md", md: "lg" }} color="gray.600">
-            Add a compelling description of your content here. Highlight
-            important features and details to capture interest.
+            Add description
           </Text>
         </Box>
 
