@@ -18,14 +18,7 @@ const Discover = () => {
           Discover What We <Text as="span" color={"green.500"}>Offer</Text>
         </Text>
         <Spacer mt={10} />
-        <Box px={paddingX} w={"100%"}>
-          <Text
-            textAlign={"center"}
-            fontSize={{ base: 16, md: 18, lg: 20 }}
-          >
-            Your Comfort and Safety Are Always Our Priority.
-          </Text>
-        </Box>
+        <Box px={paddingX} w={"100%"}></Box>
       </Box>
     </PageWrapper>
   );
